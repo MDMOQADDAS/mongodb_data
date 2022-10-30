@@ -37,6 +37,7 @@ db.persons.aggregate([
 { $sort: { totalPersons: -1 } }
 ])
 
+ db.person.aggregate([ {$match: {gender: 'male'} } , { $group: { _id: {mystate: "$location.state"} , totalPerson: {$sum: 1} } } ])
 
 db.persons.aggregate([ 
 	{ $project: { _id: 0, gender: 1 } }
