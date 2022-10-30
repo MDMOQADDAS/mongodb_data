@@ -38,8 +38,9 @@ db.students.updateOne({ name: "abhi"} , { $set: {hobbies: ["sports" , "cooking"]
 db.students.findOne({ name: "abhi" }).hobbies
 db.students.find({ hobbies: "sports" })
 db.students.findOne({ hobbies: "sports" }).mob
- db.students.find({ "status.description": "great" })
- 
+db.students.find({ "status.description": "great" })
+#To find the nested key 
+ db.students.find( {"dob.age" : 32  } )
  
  db.stats()
  console.log("hi")
