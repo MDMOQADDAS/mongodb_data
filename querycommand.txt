@@ -34,7 +34,7 @@ db.students.find({} , {name: 1 , _id: 0} )
 db.students.updateMany({}, { $set: { "status": { description: "great" , markname: "test" }  } })
 
 * Index
-   *  db.person.createIndex({"dob.age" : 1})  [db.person.explain("executionStats").find({"dob.age": 47})]
+ * db.person.createIndex({"dob.age" : 1})  [db.person.explain("executionStats").find({"dob.age": 47})]
    
 
 db.students.updateOne({ name: "abhi"} , { $set: {hobbies: ["sports" , "cooking"] } })
