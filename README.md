@@ -12,6 +12,8 @@
 * MongoDB Cluster (Sharding, Replicaset)
 * Capped Collection
 * Index
+    * Write -: Write once
+    * Read  -: It will happen again and again, so Read operation may slow down read performance, so we can increase Read Performance
 
 ## Resources
 * https://www.mongodb.com/docs/manual/tutorial/getting-started/
