@@ -44,6 +44,9 @@ db.students.find({ "status.description": "great" })
  
  db.stats()
  console.log("hi")
+ #executinStats
+ db.person.explain().find({"dob.age": 47})
+ db.person.explain("executionStats").find({"dob.age": 47})
  
  students> db.students.drop()
  students> db.dropDatabase()
