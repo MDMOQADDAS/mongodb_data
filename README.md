@@ -17,3 +17,4 @@
 
 ## Resources
 * https://www.mongodb.com/docs/manual/tutorial/getting-started/
+* https://www.mongodb.com/docs/manual/reference/method/db.collection.createIndex/
