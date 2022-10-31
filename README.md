@@ -10,6 +10,8 @@
 * Management
 * MongoDB Security
 * MongoDB Cluster (Sharding, Replicaset)
+* Capped Collection
+* Index
 
 ## Resources
 * https://www.mongodb.com/docs/manual/tutorial/getting-started/
