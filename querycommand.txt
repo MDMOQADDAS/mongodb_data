@@ -52,6 +52,8 @@ db.students.find({ "status.description": "great" })
  db.person.explain().find({"dob.age": 47})
  db.person.explain("executionStats").find({"dob.age": 47})
  
+ # db.st.insertOne({name: 'a' ,createAt: new Date() }) create at time
+ 
  students> db.students.drop()
  students> db.dropDatabase()
  
